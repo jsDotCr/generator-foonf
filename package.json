@@ -1,0 +1,23 @@
+{
+  "name": "generator-foonf",
+  "version": "0.0.0",
+  "description": "Scaffolds an HTML5, Gulp-powered toolchain & AMD (require.js) project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "scaffold",
+    "html5",
+    "gulp",
+    "amd",
+    "requirejs"
+  ],
+  "author": "jsDotCr",
+  "license": "WTFPL – Do What the Fuck You Want to Public License",
+  "dependencies": {
+    "yeoman-generator": "^0.17.6"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.0.0",
+  <% if (typeof(author)==='string') { %>
+  "authors": [
+  "<%= author %>"
+  ],
+  <% } %>
+  "description": "Hello Fresh Trial Task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
+  "devDependencies": {
+    "bower": "^1.3.9",
+    "jshint-stylish": "^0.4.0",
+    "gulp": "^3.8.8",
+    "gulp-usemin": "^0.3.8",
+    "gulp-minify-css": "^0.3.8",
+    "gulp-minify-html": "^0.1.5",
+    "gulp-rev": "^1.1.0",
+    "gulp-livereload": "^2.1.1",
+    "gulp-requirejs": "^0.1.3",
+    "gulp-uglify": "^1.0.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-csslint": "^0.1.5",
+    "gulp-autoprefixer": "^1.0.0",
+    "gulp-jshint": "^1.8.4"
+  }
+}
