@@ -15,14 +15,15 @@
 # Questions to be added
 Just some random thoughts about the questions to prompt to the user. I think it's better to add those here instead of using a planning tool. I wouldn't have updated it anyway. Public is better (and there's for sure somebody out there who has better ideas than mines).
 
-
 ## Project details
 Writing project details in both bower.json and package.json. Using a composer could be a **better** choice, though.
+
 **Status**: partially done.
 
 ## Browser support
 There are some browser (version)-dependant dependencies or rules, like HTML5 shim for IE8-, and the CSS vendor prefixes (handled by autoprefixer). Having this information would help generating less shitty code (eg.: why the hell should I include html5shim if I just need to support IE10+?)
-**Status**: 
+
+**Status**:
 
 ## CSS reset?
 Provide a shortlist of different CSS resets, like:
@@ -30,6 +31,7 @@ Provide a shortlist of different CSS resets, like:
 * No reset css, let the browser use its own stylesheets by default
 * Remove inconsistent cross-browser styling (aka: yui reset, normalize.css)
 * Get rid of all browser stylesheets in a well mannered way (reset CSS)
+
 **Status**: 
 
 ## JS framework?
@@ -39,10 +41,12 @@ I'd like to avoid including the whole jQuery thingy by default. And customizing 
 * underscore/lodash
 
 Would be better (note for the future: it could be worth adding some other helpful microjs framework too). In any case, AMD modules will be used. CommonJS FTW!
+
 **Status**: 
 
 ## Templating system
 Defaults to handlebars. Maybe: it could be worth checking if there are some more available templating systems with AMD support.
+
 **Status**: 
 
 ## "Compiled" files folder
@@ -52,10 +56,12 @@ There two different "compiled" folders right now:
 * **build** for the final html/js/css files
 
 Providing a question to change this would be highly appreciated, I suppose.
+
 **Status**: partially done
 
 ## SPA or multipage?
 This is not really an expensive task: it's just about adding an almost-exact-copy of the index.html file, with a different name and a different js endpoint. But it could be worth adding it.
+
 **Status**: 
 
 # License
