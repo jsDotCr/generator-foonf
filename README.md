@@ -1,10 +1,10 @@
 # What this Yeoman generator is already capable of
 
-* Creates a package.json/bower.json with all the project details
+* Ask basic questions to the user so it can generate package.json && bower.json files with all the project details
 * Creates lint files (both .csslintrc & .jshintrc)
 * Adds a .gitignore file
 
-# What this Yeoman generator is already capable of, but unit tests are still to be written
+# What this Yeoman generator is already capable of, but unit tests are still missing
 
 * It uses require.js to load these basic JS libraries:
 
@@ -24,7 +24,7 @@
 
 * Add a basic reset CSS file (there is a YUI reset in there, but it'd be nice to load it using bower, I hate /vendor folders)
 * Add a dummy CSS file (there is one already, but it acts most likely as a placeholder; usemin loves to complain about empty blocks)
-* _(create an empty git repo?)_
+* _create an empty git repo?_
 * Install dependencies
 * Add a second page, if it's not a Single Page Application
 * Add cucumber.js/functional testing
