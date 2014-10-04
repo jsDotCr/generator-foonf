@@ -4,7 +4,7 @@
   "description": "Scaffolds an HTML5, Gulp-powered toolchain & AMD (require.js) project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "yeoman-generator",
@@ -19,5 +19,11 @@
   "license": "WTFPL – Do What the Fuck You Want to Public License",
   "dependencies": {
     "yeoman-generator": "^0.17.6"
+  },
+  "devDependencies": {
+    "assert": "^1.1.2",
+    "fs": "0.0.2",
+    "mocha": "^1.21.4",
+    "path": "^0.4.9"
   }
 }
