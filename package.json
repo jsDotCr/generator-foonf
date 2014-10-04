@@ -1,6 +1,6 @@
 {
   "name": "generator-foonf",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Scaffolds an HTML5, Gulp-powered toolchain & AMD (require.js) project.",
   "main": "index.js",
   "scripts": {

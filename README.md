@@ -1,29 +1,42 @@
-# What this Yeoman generator is supposed to do
+# What this Yeoman generator is already capable of
+
+* Creates a package.json/bower.json with all the project details
+* Creates lint files (both .csslintrc & .jshintrc)
+* Adds a .gitignore file
+
+# What this Yeoman generator is already capable of, but unit tests are still to be written
+
+* It uses require.js to load these basic JS libraries:
+
+  * text/JSON require.js loader
+  * domReady
+  * Handlebars
+* Build a basic Gulp toolchain feat.:
+
+  * Connect server
+  * File watcher
+  * HTML: (usemin's) minifier
+  * CSS: CSSLint, Autoprefixer, (usemin's) concat & minifier
+  * JS: JSHint, (usemin's) uglifier, concat, rev.
+* Adds an index.html / playground page to link all this together.
+
+# What this Yeoman generator will (most likely) do
+
+* Add a basic reset CSS file (there is a YUI reset in there, but it'd be nice to load it using bower, I hate /vendor folders)
+* Add a dummy CSS file (there is one already, but it acts most likely as a placeholder; usemin loves to complain about empty blocks)
 * _(create an empty git repo?)_
-* Add a .gitignore file
-* Compile a bower.json + package.json with the very same data about the webapp
 * Install dependencies
-* Create lint rule files (.csslintrc & .jshintrc)
-* Build a decent enough Gulp toolchain
-* Create an almost-empty index.html (and a second page, if it's not a Single Page Application)
-* Add a basic reset CSS file
-* Add the very basic Javascript libraries, using require.js
-* Whatever will come up to my mind (or better, to my projects)
+* Add a second page, if it's not a Single Page Application
+* Add cucumber.js/functional testing
+* Prepare some coffee and roll a cigarette :)
 
 ---
 
-# Questions to be added
-Just some random thoughts about the questions to prompt to the user. I think it's better to add those here instead of using a planning tool. I wouldn't have updated it anyway. Public is better (and there's for sure somebody out there who has better ideas than mines).
-
-## Project details
-Writing project details in both bower.json and package.json. Using a composer could be a **better** choice, though.
-
-**Status**: partially done.
+# Questions
+Just some random thoughts about the questions to prompt to the user. I think it's better to add those here instead of using a planning tool. I wouldn't update that anyway. Public is better (and there's for sure somebody out there who has better ideas than mines).
 
 ## Browser support
 There are some browser (version)-dependant dependencies or rules, like HTML5 shim for IE8-, and the CSS vendor prefixes (handled by autoprefixer). Having this information would help generating less shitty code (eg.: why the hell should I include html5shim if I just need to support IE10+?)
-
-**Status**:
 
 ## CSS reset?
 Provide a shortlist of different CSS resets, like:
@@ -31,8 +44,6 @@ Provide a shortlist of different CSS resets, like:
 * No reset css, let the browser use its own stylesheets by default
 * Remove inconsistent cross-browser styling (aka: yui reset, normalize.css)
 * Get rid of all browser stylesheets in a well mannered way (reset CSS)
-
-**Status**: 
 
 ## JS framework?
 I'd like to avoid including the whole jQuery thingy by default. And customizing it thru this generator is not really an option, imho. Providing the choice between:
@@ -42,12 +53,8 @@ I'd like to avoid including the whole jQuery thingy by default. And customizing 
 
 Would be better (note for the future: it could be worth adding some other helpful microjs framework too). In any case, AMD modules will be used. CommonJS FTW!
 
-**Status**: 
-
 ## Templating system
-Defaults to handlebars. Maybe: it could be worth checking if there are some more available templating systems with AMD support.
-
-**Status**: 
+Defaults to handlebars. Maybe: it could be worth checking which are the other ones already available with AMD support.
 
 ## "Compiled" files folder
 There two different "compiled" folders right now:
@@ -57,12 +64,8 @@ There two different "compiled" folders right now:
 
 Providing a question to change this would be highly appreciated, I suppose.
 
-**Status**: partially done
-
 ## SPA or multipage?
 This is not really an expensive task: it's just about adding an almost-exact-copy of the index.html file, with a different name and a different js endpoint. But it could be worth adding it.
-
-**Status**: 
 
 # License
 I love licenses!! That's why I'm using the **WTFPL – Do What the Fuck You Want to Public License**.
@@ -81,4 +84,13 @@ I love licenses!! That's why I'm using the **WTFPL – Do What the Fuck You Want
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
 
+```
+
+# Unit testing && code coverage
+Just run:
+
+
+```
+# If istanbul is not globally installed yet, please also execute: npm i -g istanbul 
+npm test && istanbul cover node_modules/mocha/bin/_mocha
 ```
