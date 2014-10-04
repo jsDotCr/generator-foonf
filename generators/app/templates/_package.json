@@ -1,19 +1,36 @@
 {
-  "name": "<%= appName %>",
-  "version": "0.0.0",
-  <% if (typeof(author)==='string') { %>
-  "authors": [
-  "<%= author %>"
+  "name": "<%= project.name %>",
+  "description": "<%= project.description %>",
+  "version": "<%= project.version %>",
+  "keywords": "<%= project.keywords %>",
+  "maintainers": [
+    {
+      "name": "<%= project.maintainerName %>"
+    }
   ],
-  <% } %>
-  "description": "Hello Fresh Trial Task",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "contributors": [
+    {
+      "name": "<%= project.maintainerName %>"
+    }
+  ],
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "<%= project.licenseType %>",
+      "url": "<%= project.licenseUrl %>"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "<%= project.repositoryType %>",
+      "url": "<%= project.repositoryUrl %>"
+    }
+  ],
+  "dependencies": {
+
   },
-  "license": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
   "devDependencies": {
-    "bower": "^1.3.9",
+    "bower": "^1.3.12",
     "jshint-stylish": "^0.4.0",
     "gulp": "^3.8.8",
     "gulp-usemin": "^0.3.8",
@@ -27,5 +44,10 @@
     "gulp-csslint": "^0.1.5",
     "gulp-autoprefixer": "^1.0.0",
     "gulp-jshint": "^1.8.4"
+  },
+
+  "main": "index.html",
+  "scripts": {
+    "test": "<%= project.testRunner %>"
   }
 }

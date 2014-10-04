@@ -1,0 +1,12 @@
+{
+  "name": "Awesome",
+  "description": "This website is going to be awesome.",
+  "version": "0.0.0",
+  "keywords": "this, is, going, to, be, legen, wait, for, it, ..., dary",
+  "maintainerName": "Me",
+  "licenseType": "WTFPL",
+  "licenseUrl": "http://www.wtfpl.net/txt/copying/",
+  "repositoryType": "git",
+  "repositoryUrl": "",
+  "testRunner": "echo \\\"Error: no test specified\\\" && exit 1"
+}

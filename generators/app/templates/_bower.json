@@ -1,14 +1,13 @@
 {
-  "name": "<%= appName %>",
-  "version": "0.0.0",
-  <% if (typeof(author)==='string') { %>
-  "authors": [
-    "<%= author %>"
-  ],
-  <% } %>
+  "name": "<%= project.name %>",
+  "description": "<%= project.description %>",
   "main": "index.html",
-  "license": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
-  "private": true,
+  "license": [
+    {
+      "type": "<%= project.licenseType %>",
+      "url": "<%= project.licenseUrl %>"
+    }
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,10 +15,21 @@
     "test",
     "tests"
   ],
+  "keywords": "<%= project.keywords %>",
+  "authors": [
+    {
+      "name": "<%= project.maintainerName %>"
+    }
+  ],
+  "repository": {
+    "type": "<%= project.repositoryType %>",
+    "url": "<%= project.repositoryUrl %>"
+  },
   "dependencies": {
     "domReady": "git://github.com/requirejs/domReady.git#~2.0.1",
     "requirejs": "~2.1.14",
     "requirejs-plugins": "~1.0.2",
     "handlebars": "~2.0.0"
-  }
+  },
+  "private": true
 }
